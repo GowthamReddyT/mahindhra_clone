@@ -1,0 +1,974 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ----------------- NAVBAR ----------------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 100;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 20px;
+}
+
+.logo {
+  text-align: center;
+  line-height: 1.2;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.brand {
+  font-size: 22px;
+  font-family: cursive;
+}
+
+.journey {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ----------------- HERO SECTION ----------------- */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('assests/images/hyper-car-logo.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0.95));
+  z-index: 1;
+}
+
+.hero .content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero .content h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero .content p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* Arrow with smooth scroll */
+.hero .arrow {
+  margin-top: 20px;
+  font-size: 20px;
+  animation: bounce 1.5s infinite;
+  z-index: 2;
+}
+
+.hero .arrow a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.hero .arrow a:hover {
+  transform: translateY(5px);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* ----------------- PEOPLE SECTION ----------------- */
+.people-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Background image */
+.people-section .bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Overlay for readability */
+.people-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.85));
+  z-index: 2;
+}
+
+/* Text content */
+.people-section .content {
+  position: relative;
+  z-index: 3;
+  max-width: 500px;
+  padding-left: 8%;
+  color: #fff;
+}
+
+/* Headline */
+.people-section .content h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+/* Quote paragraph */
+.people-section .content p.quote {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Navigation line under text */
+.people-section .nav-line {
+  display: flex;
+  gap: 50px;
+  font-size: 14px;
+  color: #888;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  width: fit-content;
+}
+
+.people-section .nav-line span.active {
+  color: #fff;
+  font-weight: 600;
+}
+
+.people-section .nav-line span:hover:not(.active) {
+  color: #bbb;
+}
+
+/* ----------------- RESPONSIVE ----------------- */
+@media screen and (max-width: 768px) {
+  .hero .content h1,
+  .people-section .content h1 {
+    font-size: 28px;
+  }
+
+  .hero .content p,
+  .people-section .content p.quote {
+    font-size: 14px;
+  }
+
+  .people-section .nav-line {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+/* ----------------- WAYNE ENTERPRISES SECTION ----------------- */
+.wayne-enterprises {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+}
+
+.wayne-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.wayne-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9));
+  z-index: 2;
+}
+
+.wayne-content {
+  position: relative;
+  z-index: 3;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.wayne-content h3 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.wayne-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.wayne-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.learn-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.learn-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .wayne-content h1 {
+    font-size: 28px;
+  }
+  .wayne-content p {
+    font-size: 14px;
+  }
+}
+
+/* ----------------- BATTISTA SECTION ----------------- */
+.battista-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000;
+}
+
+.battista-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.battista-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.9));
+  z-index: 2;
+}
+
+.battista-content {
+  position: relative;
+  z-index: 3;
+  max-width: 850px;
+  padding: 0 20px;
+}
+
+.battista-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.battista-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #dcdcdc;
+  margin-bottom: 40px;
+}
+
+/* Buttons */
+.battista-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.battista-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.battista-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.battista-btn.enquiry {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.battista-btn.enquiry:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .battista-content h1 {
+    font-size: 32px;
+  }
+
+  .battista-content p {
+    font-size: 14px;
+  }
+
+  .battista-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* ----------------- PURA VISION SECTION ----------------- */
+.pura-vision {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000;
+}
+
+.pura-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.pura-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.85));
+  z-index: 2;
+}
+
+.pura-content {
+  position: relative;
+  z-index: 3;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.pura-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.pura-content p {
+  font-size: 16px;
+  color: #dcdcdc;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Button */
+.pura-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.pura-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pura-content h1 {
+    font-size: 32px;
+  }
+
+  .pura-content p {
+    font-size: 14px;
+  }
+}
+
+/* ----------------- RETAIL PARTNERS SECTION ----------------- */
+.retail-partners {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  overflow: hidden;
+}
+
+.partners-left {
+  flex: 1;
+  z-index: 3;
+  max-width: 500px;
+}
+
+.partners-left h1 {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.partners-left p {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.partners-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.partners-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.partners-right {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.world-map {
+  width: 90%;
+  max-width: 900px;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 20px rgba(0, 140, 255, 0.4));
+}
+
+/* Glowing markers */
+.marker {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: rgba(0, 140, 255, 0.2);
+  border: 2px solid #00aaff;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 160, 255, 0.8);
+  animation: pulse 1.8s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .retail-partners {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 5%;
+    height: auto;
+  }
+
+  .partners-left {
+    margin-bottom: 50px;
+  }
+
+  .world-map {
+    width: 100%;
+  }
+
+  .marker {
+    width: 18px;
+    height: 18px;
+  }
+}
+/* ----------------- RETAIL PARTNERS SECTION ----------------- */
+.retail-partners {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  overflow: hidden;
+}
+
+.partners-left {
+  flex: 1;
+  z-index: 3;
+  max-width: 500px;
+}
+
+.partners-left h1 {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.partners-left p {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.partners-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.partners-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.partners-right {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.world-map {
+  width: 90%;
+  max-width: 900px;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 20px rgba(0, 140, 255, 0.4));
+}
+
+/* Glowing markers */
+.marker {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: rgba(0, 140, 255, 0.2);
+  border: 2px solid #00aaff;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 160, 255, 0.8);
+  animation: pulse 1.8s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .retail-partners {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 5%;
+    height: auto;
+  }
+
+  .partners-left {
+    margin-bottom: 50px;
+  }
+
+  .world-map {
+    width: 100%;
+  }
+
+  .marker {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* ----------------- RETAIL PARTNERS SECTION ----------------- */
+.retail-partners {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  overflow: hidden;
+}
+
+.partners-left {
+  flex: 1;
+  z-index: 3;
+  max-width: 500px;
+}
+
+.partners-left h1 {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.partners-left p {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.partners-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.partners-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.partners-right {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.world-map {
+  width: 90%;
+  max-width: 900px;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 15px rgba(0, 140, 255, 0.2));
+}
+
+/* Removed markers completely */
+.marker {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .retail-partners {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 5%;
+    height: auto;
+  }
+
+  .partners-left {
+    margin-bottom: 50px;
+  }
+
+  .world-map {
+    width: 100%;
+  }
+}
+
+
+
+/* ----------------- FOOTER SECTION ----------------- */
+.footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 80px 0 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Text logo replacement */
+.footer-brand {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 6px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.footer-brand span {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.footer-top h2 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer-top p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 35px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.footer-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.footer-btn.enquiry {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Divider line */
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 90%;
+  margin: 40px auto;
+}
+
+/* Bottom section */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.footer-left p {
+  margin: 0;
+  color: #aaa;
+}
+
+.footer-left a {
+  color: #5ecbff;
+  text-decoration: none;
+}
+
+.footer-left a:hover {
+  text-decoration: underline;
+}
+
+.co2-logo {
+  height: 30px;
+  opacity: 0.9;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-right a {
+  color: #ccc;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Yezdi Motorcycles | Replica Page</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="bike.css">
+  <base href="./assests/images/">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="top-nav">
+      <div class="left">
+        <i class="fa fa-search"></i>
+        <span>Search</span>
+      </div>
+
+      <div class="logo">
+        <h1>JAWA YEZDI</h1>
+        <div class="underline"></div>
+        <div class="underline1"></div>
+        <p>MOTORCYCLES</p>
+      </div>
+       
+      <div class="right">
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <button class="book-btn">
+          Book Test Ride <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="#">Jawa</a>
+      <a href="#">Yezdi</a>
+      <a href="#">Service</a>
+      <a href="#">Dealers</a>
+      <a href="#">Yezdi Coffee</a>
+    </nav>
+  </header>
+
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+<div class="video-scroll-container">
+  <!-- Scroll Left Button -->
+  <button class="scroll-arrow left" onclick="scrollPrev()">⬅</button>
+
+  <div class="video-scroll">
+    <div class="video-item">
+      <video src="https://www.jawayezdimotorcycles.com/cdn/shop/videos/c/vp/2a2673a880474fcc9d43876ea6f12eea/2a2673a880474fcc9d43876ea6f12eea.SD-480p-1.5Mbps-57234668.mp4?v=0" autoplay loop muted playsinline></video>
+    </div>
+
+    <div class="video-item">
+      <video src="https://www.jawayezdimotorcycles.com/cdn/shop/videos/c/vp/37188cb8ba274b599ae2cabc2e2622ea/37188cb8ba274b599ae2cabc2e2622ea.SD-480p-1.5Mbps-56560939.mp4?v=0" autoplay loop muted playsinline></video>
+    </div>
+
+    <div class="video-item">
+      <img src="https://www.jawayezdimotorcycles.com/cdn/shop/files/evista_Yezdi_Website_Desktop_Banner_2800x1000px.png?v=1759247130&width=1400" alt="Yezdi Banner">
+    </div>
+  </div>
+
+  <!-- Scroll Right Button -->
+  <button class="scroll-arrow right" onclick="scrollNext()">➜</button>
+</div>
+
+<script>
+  function scrollNext() {
+    const container = document.querySelector('.video-scroll');
+    const width = container.clientWidth;
+    container.scrollBy({ left: width, behavior: 'smooth' });
+
+    // Loop forward
+    setTimeout(() => {
+      if (container.scrollLeft + width >= container.scrollWidth) {
+        container.scrollTo({ left: 0, behavior: 'smooth' });
+      }
+    }, 600);
+  }
+
+  function scrollPrev() {
+    const container = document.querySelector('.video-scroll');
+    const width = container.clientWidth;
+    container.scrollBy({ left: -width, behavior: 'smooth' });
+
+    // Loop backward
+    setTimeout(() => {
+      if (container.scrollLeft <= 0) {
+        container.scrollTo({ left: container.scrollWidth, behavior: 'smooth' });
+      }
+    }, 600);
+  }
+</script>
+
+
+<!-- ===== PASSION SECTION ===== -->
+<section class="passion-section">
+  <div class="background-bike"></div>
+  <p class="glow-text">
+    <span>It’s</span> <span>never</span> <span>the</span> <span>things</span> <span>you</span> <span>hold,</span>
+    <span>but</span> <span>the</span> <span>passions</span> <span>that</span> <span>grip</span> <span>your</span> <span>soul.</span>
+    <span>For</span> <span>some,</span> <span>a</span> <span>melody</span> <span>that</span> <span>stirs</span> <span>the</span> <span>heart.</span>
+    <span>For</span> <span>others,</span> <span>words</span> <span>that</span> <span>paint</span> <span>new</span> <span>worlds.</span>
+    <span>For</span> <span>the</span> <span>true</span> <span>riders</span> <span>it’s</span> <span>the</span> <span>road</span> <span>that</span> <span>calls,</span>
+    <span>the</span> <span>curves</span> <span>that</span> <span>beckon,</span>
+    <span>and</span> <span>the</span> <span>freedom</span> <span>found</span> <span>only</span> <span>with</span> <span>Jawa</span> <span>Yezdi</span> <span>Motorcycles.</span>
+  </p>
+  
+  
+</section>
+<br>
+<br>
+<div class="best">
+    <h1>Best Seller</h1>
+
+</div>
+<br>
+<br>
+<br>     
+ <div class="image-gallery">
+  <img src="https://www.jawayezdimotorcycles.com/cdn/shop/files/700x450.jpg?v=1754909463" alt="Jawa 42 Bobber">
+  <img src="https://www.jawayezdimotorcycles.com/cdn/shop/files/700x900.jpg?v=1754909365" alt="Jawa 42 FJ">
+  <img src="https://www.jawayezdimotorcycles.com/cdn/shop/files/Adventure_700x900_d4157be5-b41b-4668-ae8d-4d42b3adbb44.jpg?v=1754909697" alt="Yezdi Adventure">
+  <img src="https://www.jawayezdimotorcycles.com/cdn/shop/files/700X450_52d7c673-e1bc-4177-9977-6b01359f80c5.jpg?v=1754909833" alt="Jawa 42">
+</div>
+
+<br>
+<br>
+<div class="expert">
+    <h1>Expert Reviews</h1>
+</div>
+<br>
+<br>
+
+<div class="video-scroll">
+  <video src="https://www.jawayezdimotorcycles.com/cdn/shop/videos/c/vp/0603cb6b678d4fa6bb7a96623ca7ac39/0603cb6b678d4fa6bb7a96623ca7ac39.SD-480p-1.5Mbps-54673252.mp4?v=0" autoplay loop muted playsinline></video>
+
+  <video src="https://www.jawayezdimotorcycles.com/cdn/shop/videos/c/vp/a20ab78bf1ff4767a51adaa8580b8118/a20ab78bf1ff4767a51adaa8580b8118.SD-480p-1.5Mbps-54673303.mp4?v=0" autoplay loop muted playsinline></video>
+
+  <video src="https://www.jawayezdimotorcycles.com/cdn/shop/videos/c/vp/8617d7ff4b3a460e9153264a4248435f/8617d7ff4b3a460e9153264a4248435f.SD-480p-1.5Mbps-54673609.mp4?v=0" autoplay loop muted playsinline></video>
+</div>
+
+<br>
+<br>
+
+<!-- Animated image below videos -->
+<div class="image-section">
+  <img src="https://www.jawayezdimotorcycles.com/cdn/shop/files/Website_statics13.jpg?v=1754913398&width=2000" alt="Jawa Yezdi Showcase">
+</div>
+
+<br>
+<br>
+
+     <div class="last">
+        <h1 align="Center" style="font-size: 24px;">OVER 95 YEARS OF LEGACY, BUILT ONROADS THAT SHAPED HISTORY.</h1>
+        <h1 align="center" style="font-size: 14px;"> Every Ride We've Crafted Fuels The Journey Toward The Next Chapter In Motorcycling.</h1>
+     </div>
+
+     <br>
+     <br>
+
+     <footer class="jawa-footer">
+  <div class="footer-columns">
+    <div class="footer-col">
+      <h3>Motorcycles</h3>
+      <ul>
+        <li>Retro Classics</li>
+        <li>Neo Classics</li>
+        <li>Factory Customs</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Brand</h3>
+      <ul>
+        <li>Jawa Motorcycles</li>
+        <li>Yezdi Motorcycles</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Support</h3>
+      <ul>
+        <li>Contact</li>
+        <li>Refund Policy</li>
+        <li>Become a Dealer</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Media Highlights</h3>
+      <ul>
+        <li>News</li>
+        <li>Media</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-x-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025, THOTAMADUGULA GOWTHAM REDDY. All Rights Reserved.</p>
+    <div class="policy-links">
+      <a href="#">Privacy policy</a> •
+      <a href="#">Refund policy</a> •
+      <a href="#">Terms of service</a> •
+      <a href="#">Shipping policy</a> •
+      <a href="#">Contact information</a>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

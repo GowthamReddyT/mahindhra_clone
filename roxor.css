@@ -1,0 +1,926 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial Black', Impact, sans-serif;
+  color: #fff;
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+/*  NAVBAR */
+.navbar {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e51b24;
+}
+
+.quote-btn {
+  background-color: #e51b24;
+  color: white;
+  padding: 25px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 2px;
+  transition: background 0.3s;
+}
+
+.quote-btn:hover {
+  background-color: #ff2c35;
+}
+
+/* 🏞️ HERO SECTION */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("https://www.roxoroffroad.com/wp-content/uploads/2025/09/ROXOR_HomePage_Header_1920x828.webp") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px; /* offset for navbar */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #e51b24;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #e51b24;
+  color: white;
+  padding: 12px 28px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #ff2c35;
+  transform: scale(1.05);
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none; /* hide menu on small screens (can add menu icon later) */
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+}
+
+/* 🔴 Offer Section */
+.offer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  background: #fff;
+  color: black;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.offer-text {
+  min-width: 320px;
+}
+
+.offer-text .special {
+  color: #e51b24;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.offer-text h1 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 14px 28px;
+  border: none;
+  color: white;
+  background: #e51b24;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff2b35;
+}
+
+/* 📸 Offer Image */
+.offer-image {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+}
+
+.offer-image img {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.x-mark {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  font-size: 3rem;
+  color: #6c6c6c;
+  font-weight: bold;
+}
+
+/* 🧾 Quote Form Section */
+.quote-form {
+  padding: 100px 100px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  color: #000;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.quote-form h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+   
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+input, select {
+  min-width: 50px;
+  padding: 14px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.9rem;
+  gap: 8px;
+}
+
+.checkbox input {
+  margin-top: 5px;
+}
+
+.dealer-select {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+}
+
+.submit-btn {
+  background: #e51b24;
+  color: white;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: bold;
+  align-self: flex-start;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #ff2b35;
+}
+
+/* 📱 Responsive */
+@media (max-width: 900px) {
+  .offer-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .offer-image img {
+    width: 90%;
+  }
+
+  .x-mark {
+    right: 8%;
+    top: 5%;
+  }
+}
+/* === Roxor Section === */
+.roxor-section {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 60px 80px;
+  box-sizing: border-box;
+}
+
+/* === Main Content === */
+.roxor-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  color: white;
+}
+
+/* === Tabs === */
+.tab-menu {
+  margin-bottom: 15px;
+}
+
+.tab-menu span {
+  color: #999;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.tab-menu .active {
+  color: #ec1c36;
+  border-bottom: 2px solid #ec1c36;
+  padding-bottom: 4px;
+}
+
+/* === Text Content === */
+.text-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.text-content h1 {
+  font-size: 46px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.price {
+  color: #cfcfcf;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.desc {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-align: justify;
+  max-width: 480px;
+}
+
+/* === Buttons === */
+.links a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 25px;
+  transition: 0.3s;
+}
+
+.links a.view {
+  color: #ec1c36;
+  color: white;
+}
+
+.links a.quote {
+  color: #ec1c36;
+}
+
+.links a:hover {
+  opacity: 0.8;
+}
+
+/* === Image === */
+.image-content {
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.image-content img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* === Arrows === */
+.arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #999;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  color: #ec1c36;
+}
+
+.arrow.left { left: -20px; }
+.arrow.right { right: -20px; }
+
+/* === Color Dots === */
+.color-dots {
+  margin-top: 15px;
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  border: 1.5px solid #999;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  border: 2px solid #ec1c36;
+}
+
+.dot.green {
+  background-color: #606d45;
+}
+
+/* === Specs Section === */
+.specs {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.spec-item h4 {
+  color: #ccc;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.spec-item h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.spec-item p {
+  color: #999;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+/* === Responsive === */
+@media (max-width: 900px) {
+  .roxor-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    max-width: 100%;
+  }
+
+  .roxor-section {
+    padding: 40px 20px;
+  }
+
+  .image-content img {
+    max-width: 400px;
+  }
+}
+
+
+.capabilities-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 80px 50px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.capability {
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  height: 350px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.capability img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.capability:hover img {
+  transform: scale(1.08);
+  filter: brightness(60%);
+}
+
+/* Overlay setup */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.capability:hover .overlay {
+  opacity: 1;
+}
+
+/* Text animation - slides UP */
+.text-content {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.capability:hover .text-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Text styles */
+.text-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.text-content p {
+  font-size: 14px;
+  color: #e1e1e1;
+}
+
+/* Card hover effect */
+.capability:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(255, 0, 0, 0.3);
+}
+
+/* Responsive layout */
+@media (max-width: 1000px) {
+  .capabilities-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .capability {
+    width: 80%;
+    height: 400px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #000;
+  margin-top: 40px;
+}
+
+.form-section {
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-section h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-section input,
+.form-section select {
+  background: transparent;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 15px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-section button {
+  background-color: #e71c32;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-section button:hover {
+  background-color: #c5172c;
+}
+
+.map-section {
+  flex: 2;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* 🔻 Footer Image Section */
+.footer-image-section {
+  width: 100%;
+  height: 500px;
+  background-image: url("https://www.roxoroffroad.com/wp-content/uploads/2025/08/ROXOR_HomePage_Footer_1920x828.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px;
+  position: relative;
+}
+
+/* 🔻 Overlay Text */
+.footer-text {
+  position: absolute;
+  top: 15%; /* slightly above center */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.footer-text .line1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.footer-text .line2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+/* 🔻 Operator Guides Section */
+.operator-guides {
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  padding: 80px 100px;
+}
+
+.operator-guides h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.guides-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.guide-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 320px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  text-align: center;
+  padding: 20px;
+}
+
+.guide-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px rgba(231, 28, 50, 0.3);
+}
+
+.guide-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.red-line {
+  width: 60px;
+  height: 4px;
+  background-color: #e71c32;
+  margin-bottom: 15px;
+}
+
+.download-btn {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  color: #e71c32;
+}
+
+/* faqs */
+.faqs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 50px 20px;
+  background-color: #fff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.faqs h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+/* Each FAQ item */
+.faq-item {
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+}
+
+/* Button styling */
+.faq-item button {
+  background-color: white; /* Roxor red */
+  color: black;
+  border: none;
+  width: 100%;
+  padding: 18px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+  transition: background 0.3sec ease;
+}
+
+.faq-item button:hover {
+  background-color: #d0182f; /* Slightly darker red on hover */
+}
+
+/* Arrow icon on right */
+.faq-item button::after {
+  content: '\25BE'; /* Down arrow */
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+}
+
+/* Active (expanded) state */
+.faq-item button.active::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Hidden content */
+.faq-item section {
+  background-color: #fff;
+  color: #111;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Show section when active */
+.faq-item.open section {
+  max-height: 300px;
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+
+.roxor-footer {
+  background-color: #1d1f1e;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.footer-left p {
+  font-size: 1rem;
+  margin-top: 8px;
+  color: #ddd;
+}
+
+.footer-center .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+
+.footer-center .social-icons a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-center .social-icons a:hover {
+  color: #ec1c36; /* Red hover color */
+}
+
+.footer-right p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+ 

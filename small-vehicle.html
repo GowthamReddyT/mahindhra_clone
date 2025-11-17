@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahindra Style Slider</title>
+  <link rel="stylesheet" href="small-vehicle.css">
+  <!-- Font Awesome (for social media icons) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<base href="./assests/images/">
+
+</head>
+<body>
+
+  <!-- 🔺 NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="mahindra">mahindra</span><sup>Rise</sup>
+    </div>
+    <nav class="nav-links">
+      <a href="#">SUVs</a>
+      <a href="#">eSUVs</a>
+      <a href="#">COMMERCIAL</a>
+    </nav>
+    <div class="icons">
+      <i class="user">&#128100;</i>
+      <i class="menu">&#9776;</i>
+    </div>
+  </header>
+
+  <!-- 🏎️ FULLSCREEN SLIDER -->
+  <div class="slider">
+    <div class="slides">
+
+      <!-- Radio Buttons for Manual Control -->
+      <input type="radio" name="radio-btn" id="img1" checked>
+      <input type="radio" name="radio-btn" id="img2">
+      <input type="radio" name="radio-btn" id="img3">
+      <input type="radio" name="radio-btn" id="img4">
+      <input type="radio" name="radio-btn" id="img5">
+
+      <!-- Slides -->
+      <div class="slide first">
+        <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw27c0c360/3.jpg" alt="Mahindra 1">
+      </div>
+      <div class="slide">
+        <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw83c6cd1a/homepage/Master-Brand-1920x829.jpg" alt="Mahindra 2">
+      </div>
+      <div class="slide">
+        <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw47a43fbb/homepage/WebsiteBanner-1.jpg" alt="Mahindra 3">
+      </div>
+      <div class="slide">
+        <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw16091832/homepage/WebsiteBanner-2.jpg" alt="Mahindra 4">
+      </div>
+      <div class="slide">
+        <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dwc5e5bb29/homepage/WebsiteBanner-3.jpg" alt="Mahindra 5">
+      </div>
+
+      <!-- Manual Navigation (Dots or Arrows) -->
+      <div class="manual-nav">
+        <label for="img1" class="manual-btn"></label>
+        <label for="img2" class="manual-btn"></label>
+        <label for="img3" class="manual-btn"></label>
+        <label for="img4" class="manual-btn"></label>
+        <label for="img5" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <!-- ◀▶ ARROWS -->
+    <div class="arrow-nav">
+      <label for="img5" class="arrow left">&#10094;</label>
+      <label for="img2" class="arrow right">&#10095;</label>
+    </div>
+  </div>
+  <section class="highlights">
+  <h2>We Are Mahindra Automotive</h2>
+  <p>We make authentic SUVs that help you explore the impossible. Experience the best in tech, design, safety and comfort in our range of products made in India, for the world.</p>
+
+  <div class="video-scroll">
+    <div id="v1" class="video-box">
+      <video src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dwd88ecd26/homepage/keyhighlight/Unmissable-Design.mp4" autoplay muted loop></video>
+      <h3>Unmissable Design</h3>
+      <p>Stunning designs that command attention, all our products come with looks that set hearts racing.</p>
+    </div>
+
+    <div id="v2" class="video-box">
+      <video src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw59a299d8/homepage/keyhighlight/Spirited-Performance.mp4" autoplay muted loop></video>
+      <h3>Spirited Performance</h3>
+      <p>The powerful mHAWK diesel and mStallion gasoline engines engineered to rule the road are rooted in our rugged SUV DNA.</p>
+    </div>
+
+    <div id="v3" class="video-box">
+      <video src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw2d71ff9b/homepage/keyhighlight/Unmatched-Safety.mp4" autoplay muted loop></video>
+      <h3>Unmatched Safety</h3>
+      <p>Advanced Driver Assistance Systems (ADAS) enabled 5-star GNCAP-rated products form a safe cocoon for you and your loved ones.</p>
+    </div>
+
+    <div id="v4" class="video-box">
+      <video src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dwe4657475/homepage/keyhighlight/Sci-fi-Technology.mp4" autoplay muted loop></video>
+      <h3>World-class Products</h3>
+      <p>From iconic off-roaders to bold bestsellers, our diverse range of products cater to all your needs.</p>
+    </div>
+  </div>
+
+  <!-- Scroll arrows -->
+  <div class="scroll-arrows">
+    <a href="#v1" class="arrow">&#10094;</a>
+    <a href="#v2" class="arrow">&#10095;</a>
+  </div>
+</section>
+
+<section class="vehicles">
+  <h2>PASSENGER VEHICLES</h2>
+  <div class="tabs">
+    <span class="active">SUVs</span>
+    <span>E-SUVs</span>
+  </div>
+
+  <div class="carousel">
+    <div class="car">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-mahindra-product-catalog/default/dw95b25431/images/TH5D/xlarge/Thar_Roxx_624x296_HP.png" alt="THAR ROXX">
+      <div class="info">
+        <h3>THAR ROXX</h3>
+        <p>Ex. showroom price<br><strong>₹12.25L – ₹22.06L</strong></p>
+        <div class="btns">
+          <a href="#">→ Explore</a>
+          <a href="#">🚗 Test Drive</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="car">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-mahindra-product-catalog/default/dwaebe6977/images/X3XO/xlarge/S220_624x296.png" alt="XUV 3XO">
+      <div class="info">
+        <h3>XUV 3XO</h3>
+        <p>Ex. showroom price<br><strong>₹7.28L – ₹14.40L</strong></p>
+        <div class="btns">
+          <a href="#">→ Explore</a>
+          <a href="#">🚗 Test Drive</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="car">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-mahindra-product-catalog/default/dwfbfbcf05/images/SCN/xlarge/ScorpioN_624x296.png" alt="SCORPIO N">
+      <div class="info">
+        <h3>SCORPIO N</h3>
+        <p>Ex. showroom price<br><strong>₹13.60L – ₹24.54L</strong></p>
+        <div class="btns">
+          <a href="#">→ Explore</a>
+          <a href="#">🚗 Test Drive</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="car">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-mahindra-product-catalog/default/dwc53840ab/images/X700/xlarge/XUV700_624x296.png" alt="XUV700">
+      <div class="info">
+        <h3>XUV 700</h3>
+        <p>Ex. showroom price<br><strong>₹13.99L – ₹26.99L</strong></p>
+        <div class="btns">
+          <a href="#">→ Explore</a>
+          <a href="#">🚗 Test Drive</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="car">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-mahindra-product-catalog/default/dw77fadd58/images/THRN/xlarge/TharMCE_624x296.png" alt="THAR MCE">
+      <div class="info">
+        <h3>THAR MCE</h3>
+        <p>Ex. showroom price<br><strong>₹12.05L – ₹16.50L</strong></p>
+        <div class="btns">
+          <a href="#">→ Explore</a>
+          <a href="#">🚗 Test Drive</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="car">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-mahindra-product-catalog/default/dwcb50e8dc/images/SCRC/xlarge/ScorpioClassic_624x296.png" alt="SCORPIO CLASSIC">
+      <div class="info">
+        <h3>SCORPIO CLASSIC</h3>
+        <p>Ex. showroom price<br><strong>₹13.25L – ₹17.06L</strong></p>
+        <div class="btns">
+          <a href="#">→ Explore</a>
+          <a href="#">🚗 Test Drive</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="stats-row">
+    <div class="stat-box">
+      <h3>941K+</h3>
+      <p>Units sold in FY 25</p>
+    </div>
+    <div class="stat-box">
+      <h3>2.6M+</h3>
+      <p>Active Customers</p>
+    </div>
+    <div class="stat-box">
+      <h3>10k+</h3>
+      <p>Workforce</p>
+    </div>
+    <div class="stat-box">
+      <h3>70+</h3>
+      <p>Years of legacy</p>
+    </div>
+  </div>
+</section>
+
+<section class="car-banner">
+  <div class="content">
+    <h2>XUV 700 Ebony Edition</h2>
+    <h3>OUTSHINES THE DARK</h3>
+    <a href="#" class="btn">→ Book Now</a>
+  </div>
+  <div class="car-image">
+    <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw5c63993f/homepage/Web-Banner-D-without-logo.jpg" alt="Mahindra XUV700 Ebony Edition">
+  </div>
+</section>
+
+<section>
+    <div class="img1">
+        <img src="img7.1.png" alt="">
+    </div>
+</section>
+<section>
+    <div class="img2">
+        <img src="img7.2.png" alt="">
+    </div>
+</section>
+<section>
+    <div class="img3">
+        <img src="img7.3.png" alt="">
+    </div>
+</section>
+
+<section class="buzz-section">
+  <h2>CATCH THE LATEST BUZZ</h2>
+
+  <div class="buzz-container">
+
+    <div class="buzz-card">
+      <p class="date">01 November 2025</p>
+      <h3>Meet the Mahindra XEV 9S</h3>
+      <p class="desc">The Big New 7-Seater Electric SUV</p>
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw188e4b82/homepage/meet-the-mahindra-xev-9s-Desktop%E2%80%93343x192.jpg" alt="XEV 9S" />
+    </div>
+
+    <div class="buzz-card">
+      <p class="date">06 October 2025</p>
+      <h3>Mahindra introduces New Bolero Range</h3>
+      <p class="desc">With Bold New Design, Upgraded Interiors and Modern Features</p>
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dwe1fc1ea3/homepage/bolero-new-pr-343%C3%97192.jpg" alt="Bolero" />
+    </div>
+
+    <div class="buzz-card">
+      <p class="date">03 October 2025</p>
+      <h3>Mahindra Launches New Thar at a starting price of...</h3>
+      <p class="desc">Refreshed Design, Enhanced Comfort and Smart Connectivity</p>
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw91cc7f10/homepage/New-thar-343x192.jpg" alt="Thar" />
+    </div>
+
+    <div class="buzz-card">
+      <p class="date">10 September 2025</p>
+      <h3>Mahindra Launches ‘Unlimit Bharat’ Campaign</h3>
+      <p class="desc">In Collaboration with TV9 Network</p>
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw0d9c3d99/homepage/Unlimit-Bharat-Campaign-343x192.jpg" alt="Unlimit Bharat" />
+    </div>
+
+    <div class="buzz-card">
+      <p class="date">06 September 2025</p>
+      <h3>Mahindra Passes on Full GST Benefits to Customers</h3>
+      <p class="desc">Benefits up to ₹1.56 Lakh on ICE SUV Portfolio</p>
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw23e39fd8/homepage/pr-1.png" alt="GST Benefits" />
+    </div>
+
+    <div class="buzz-card">
+      <p class="date">15 August 2025</p>
+      <h3>Mahindra Unveils Global Vision 2027</h3>
+      <p class="desc">Showcases four world-beating SUV based on NU_IQ platform</p>
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw23a11335/homepage/BE-Desktop-343-%C3%97-192.jpg" alt="Vision 2027" />
+    </div>
+
+  </div>
+</section>
+
+<section class="awards-section">
+  <h2>AWARDS & RECOGNITION</h2>
+
+  <div class="awards-container">
+    <div class="award-card">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw2eb653d7/homepage/Auto-Car-252x110-12.png" alt="Autocar Award">
+      <p>Thar ROXX wins SUV of the Year, 4x4 of the Year, 2025</p>
+    </div>
+
+    <div class="award-card">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw5880022e/homepage/awards/desktop/thar-rocks-desktop.jpg" alt="Team BHP Award">
+      <p>Thar ROXX: Winner of the Car of 2024 Award</p>
+    </div>
+
+    <div class="award-card">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw2eb653d7/homepage/Auto-Car-252x110-12.png" alt="Autocar Compact SUV Award">
+      <p>Mahindra XUV 3XO bags Compact SUV of the Year</p>
+    </div>
+
+    <div class="award-card">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw2eb653d7/homepage/Auto-Car-252x110-12.png" alt="Autocar Manufacturer Award">
+      <p>Mahindra leads in excellence with Manufacturer of the Year, 2025</p>
+    </div>
+
+    <div class="award-card">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw511e1c40/homepage/awards/desktop/kb-1.jpg" alt="Kantar BrandZ">
+      <p>Kantar Brandz Most Valuable Brands 2024 – Top Riser Brand (Automotive – 4W)</p>
+    </div>
+
+    <div class="award-card">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw6cfd8ef1/homepage/awards/desktop/252x110-Car-India.png" alt="Car India Awards">
+      <p>Mahindra XUV400: Mid-size Electric SUV of the Year</p>
+    </div>
+
+    <div class="award-card">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw1b01005b/homepage/awards/desktop/252x110-Acko-Drive-TOTM-Awards.png" alt="Drive Awards">
+      <p>XUV400 bags EV Car Award</p>
+    </div>
+
+    <div class="award-card">
+      <img src="https://auto.mahindra.com/on/demandware.static/-/Sites-amc-Library/default/dw1ab5af98/homepage/awards/desktop/252x110-Motorbeam.png" alt="Motorscribes Award">
+      <p>Thar RWD wins Gamechanger of the Year, 2023</p>
+    </div>
+  </div>
+</section>
+
+<section>
+    <div class="img3">
+        <img src="img7.4.png" alt="">
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="contact">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Mahindra_logo.svg/2560px-Mahindra_logo.svg.png" alt="Mahindra Logo" class="logo">
+      <p>For any assistance call us on</p>
+      <a href="tel:18002096006" class="call-btn"><i class="fas fa-phone-alt"></i> 1800 209 6006</a>
+    </div>
+
+    <div class="social">
+      <p>Social links</p>
+      <div class="icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer-links">
+    <div>
+      <h3>SUVS</h3>
+      <ul>
+        <li>Explore All SUVs</li>
+        <li>Thar Roxx</li>
+        <li>Scorpio-N</li>
+        <li>XUV700</li>
+        <li>XUV 3XO</li>
+        <li>Thar</li>
+        <li>XUV 400</li>
+        <li>Scorpio Classic</li>
+        <li>Bolero</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>PIK-UPS</h3>
+      <ul>
+        <li>Veero</li>
+        <li>Maxx City</li>
+        <li>Maxx HD</li>
+        <li>Bolero Pik-up</li>
+        <li>Bolero Camper</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>ABOUT</h3>
+      <ul>
+        <li>About us</li>
+        <li>Media kit</li>
+        <li>Careers</li>
+        <li>QMS Certificate</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>OWNER</h3>
+      <ul>
+        <li>Service</li>
+        <li>Adventure</li>
+        <li>Self-Service & Maintenance</li>
+        <li>Owner's manual</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>CUSTOMER SERVICE</h3>
+      <ul>
+        <li>Contact us</li>
+        <li>FAQs</li>
+        <li>Dealer Locator</li>
+        <li>Corporate Sales Enquiry</li>
+        <li>Sitemap</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>QUICK LINKS</h3>
+      <ul>
+        <li>Test Drive</li>
+        <li>Book Online</li>
+        <li>Exchange</li>
+        <li>Finance</li>
+        <li>Scrappage</li>
+        <li>Subscribe a vehicle</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="app-box">
+      <p>Download the M4U app now!</p>
+      <div class="app-buttons">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+      </div>
+    </div>
+
+    <div class="whatsapp-box">
+      <i class="fab fa-whatsapp"></i>
+      <div>
+        <p>Let's connect on Whatsapp</p>
+        <a href="#" class="chat-btn">→ Chat now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-end">
+    <p>Mahindra Corporate</p>
+    <p>Terms & Conditions</p>
+    <p>Our Privacy Policy</p>
+    <span>Copyright © 2025 THOTAMADUGULA GOWTHAM REDDY</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahindra Truck & Bus</title>
+  <link rel="stylesheet" href="large-vehicles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <base href="./assests/images/">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://indiashippingnews.com/wp-content/uploads/2023/12/Truck-Bus.png" alt="Mahindra Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">HCV</a></li>
+        <li><a href="#">ICV</a></li>
+        <li><a href="#">LCV</a></li>
+        <li><a href="#">BUSES</a></li>
+        <li><a href="#">IMAXX</a></li>
+        <li><a href="#">BLOGS</a></li>
+      </ul>
+    </nav>
+    <div class="icons">
+      <i class="fa-solid fa-envelope"></i>
+      <i class="fa-solid fa-phone"></i>
+      <i class="fa-solid fa-location-dot"></i>
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Slider -->
+  <section class="slider">
+    <div class="slides">
+      <img src="https://www.mahindratruckandbus.com/english/images/Home-Blezo-desktop-x2_2000x758.jpg" alt="Blazo X" />
+      <img src="https://www.mahindratruckandbus.com/english/images/cruzio-banner-desktop.png" alt="Cruzio" />
+      <img src="https://www.mahindratruckandbus.com/english/images/Adaptation_Mileage_Guarantee_2000X758.jpg" alt="Mileage Guarantee" />
+      <img src="https://www.mahindratruckandbus.com/english/images/Adaptation_2000x758.jpg" alt="Adaptation" />
+      <img src="https://www.mahindratruckandbus.com/english/images/Imaxx_Banner_Recreation_August_2000x758.jpg" alt="Imaxx" />
+    </div>
+
+    <button class="arrow prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="arrow next"><i class="fa-solid fa-chevron-right"></i></button>
+
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- Footer Banner -->
+  <footer class="bottom-banner">
+    <p>To know more, give us a missed call on: <strong>1800 315 7799</strong></p>
+  </footer>
+
+  <script>
+    const slides = document.querySelector('.slides');
+    const dots = document.querySelectorAll('.dot');
+    const totalSlides = dots.length;
+    let index = 0;
+    let autoSlide;
+
+    function showSlide(i) {
+      slides.style.transform = `translateX(-${i * 100}%)`;
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[i].classList.add('active');
+    }
+
+    function nextSlide() {
+      index = (index + 1) % totalSlides;
+      showSlide(index);
+    }
+
+    function prevSlide() {
+      index = (index - 1 + totalSlides) % totalSlides;
+      showSlide(index);
+    }
+
+    function startAutoSlide() {
+      autoSlide = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoSlide() {
+      clearInterval(autoSlide);
+    }
+
+    document.querySelector('.next').addEventListener('click', () => {
+      stopAutoSlide();
+      nextSlide();
+      setTimeout(startAutoSlide, 7000);
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+      stopAutoSlide();
+      prevSlide();
+      setTimeout(startAutoSlide, 7000);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        stopAutoSlide();
+        index = i;
+        showSlide(i);
+        setTimeout(startAutoSlide, 7000);
+      });
+    });
+
+    const slider = document.querySelector('.slider');
+    slider.addEventListener('mouseenter', stopAutoSlide);
+    slider.addEventListener('mouseleave', startAutoSlide);
+
+    showSlide(0);
+    startAutoSlide();
+  </script>
+<br>
+<br>
+  <section class="enquiry-section">
+    <div class="enquiry-box">
+      <h2>ENQUIRY</h2>
+      <p>Kindly fill the form below and we will get in touch with you.</p>
+
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email ID*</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact">Contact Number*</label>
+          <input type="tel" id="contact" placeholder="Enter contact number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="state">State*</label>
+          <select id="state" required>
+            <option value="">Select State</option>
+            <option>Andhra Pradesh</option>
+            <option>Telangana</option>
+            <option>Tamil Nadu</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+          </select>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="terms" required>
+          <label for="terms">I Agree To The Terms Of Service And Privacy Policy.</label>
+        </div>
+
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="img1">
+        <img src="img6.1.png" alt="">
+    </div>
+  </section>
+
+  <section class="products-section">
+    <h2>OUR PRODUCTS</h2>
+    <div class="products-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://www.mahindratruckandbus.com/english/images/product-3.png" alt="HCV">
+        <div class="overlay">
+          <h3>HEAVY COMMERCIAL VEHICLES – HCV</h3>
+          <a href="#" class="btn">EXPLORE RANGE</a>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="https://www.mahindratruckandbus.com/english/images/product-1.png" alt="ICV">
+        <div class="overlay">
+          <h3>INTERMEDIATE COMMERCIAL VEHICLES – ICV</h3>
+          <a href="#" class="btn">EXPLORE RANGE</a>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="https://www.mahindratruckandbus.com/english/images/product-2.png" alt="LCV">
+        <div class="overlay">
+          <h3>LIGHT COMMERCIAL VEHICLES – LCV</h3>
+          <a href="#" class="btn">EXPLORE RANGE</a>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="https://www.mahindratruckandbus.com/english/images/product-4.png" alt="Buses">
+        <div class="overlay">
+          <h3>BUSES – PASSENGER BUSES</h3>
+          <a href="#" class="btn">EXPLORE RANGE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section">
+  <h2 class="section-title">SERVICES</h2>
+
+  <div class="tabs">
+    <!-- Hidden radio buttons -->
+    <input type="radio" name="tab" id="tab1" checked>
+    <input type="radio" name="tab" id="tab2">
+    <input type="radio" name="tab" id="tab3">
+    <input type="radio" name="tab" id="tab4">
+
+    <!-- Labels for each tab -->
+    <div class="tab-labels">
+      <label for="tab1" class="tab">Mobile Vans</label>
+      <label for="tab2" class="tab">Now Service 24x7</label>
+      <label for="tab3" class="tab">Driver Training</label>
+      <label for="tab4" class="tab">MPARTS Plaza</label>
+    </div>
+
+    <!-- Content sections -->
+    <div class="tab-content" id="content1">
+      <div class="content">
+        <img src="https://www.mahindratruckandbus.com/english/images/mobile-van.png" alt="Mobile Vans">
+        <div class="text">
+          <h3>MOBILE VANS</h3>
+          <p>
+            Our mobile service vans provide 24/7 roadside assistance for broken-down trucks and buses. Drivers can call the NOW helpline (1800 200 3600) anytime, and the van will locate and assist the vehicle, ensuring it’s quickly back on the road, minimizing downtime and maximizing productivity.
+          </p>
+          <a href="#">Know more →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="content2">
+      <div class="content">
+        <div class="text">
+          <h3>NOW SERVICE 24x7</h3>
+          <p>
+            The NOW service offers round-the-clock breakdown assistance for all Mahindra trucks and buses. With a single helpline number (1800 200 3600), we ensure quick response times and minimal downtime so your business keeps running smoothly.
+          </p>
+          <a href="#">Know more →</a>
+        </div>
+        <img src="https://www.mahindratruckandbus.com/english/images/now-service.png" alt="Now Service 24x7">
+      </div>
+    </div>
+
+    <div class="tab-content" id="content3">
+      <div class="content">
+        <img src="https://www.mahindratruckandbus.com/english/images/driver-training.png" alt="Driver Training">
+        <div class="text">
+          <h3>DRIVER TRAINING</h3>
+          <p>
+            Mahindra’s Driver Training initiative ensures professional skill development, improved safety awareness, and fuel-efficient driving techniques for commercial drivers across India.
+          </p>
+          <a href="#">Know more →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="content4">
+      <div class="content">
+        <div class="text">
+          <h3>MPARTS PLAZA</h3>
+          <p>
+            Mahindra MPARTS Plaza provides genuine spare parts under one roof for all Mahindra commercial vehicles, ensuring quality, reliability, and prompt service to keep your fleet in top condition.
+          </p>
+          <a href="#">Know more →</a>
+        </div>
+        <img src="https://www.mahindratruckandbus.com/english/images/mpartsplaza.png" alt="MPARTS Plaza">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="tools-section">
+    <h2 class="section-title">TOOLS</h2>
+
+    <div class="tools-grid">
+
+      <label class="tool-box">
+        <input type="radio" name="tool" hidden>
+        <div class="content">
+          <div class="icon">🤝</div>
+          <h3>Dealers</h3>
+          <p>Behind every high-performing Mahindra truck is a strong network of over 100 dealerships across India. These dealerships offer a range of products and services to meet all your trucking needs.</p>
+          <a href="#">Know more →</a>
+        </div>
+      </label>
+
+      <label class="tool-box">
+        <input type="radio" name="tool" hidden>
+        <div class="content">
+          <div class="icon">🔧</div>
+          <h3>Authorized Service Centres</h3>
+          <p>Mahindra Authorized Service Centres ensure your vehicle spends more time on the road with prompt, expert service from well-trained technicians.</p>
+          <a href="#">Know more →</a>
+        </div>
+      </label>
+
+      <label class="tool-box">
+        <input type="radio" name="tool" hidden>
+        <div class="content">
+          <div class="icon">🎥</div>
+          <h3>Videos</h3>
+          <p>Explore our collection of videos showcasing Mahindra Truck and Bus doing what they do best. Watch to see exceptional performance, reliability, and efficiency.</p>
+          <a href="#">Know more →</a>
+        </div>
+      </label>
+
+      <label class="tool-box">
+        <input type="radio" name="tool" hidden>
+        <div class="content">
+          <div class="icon">📘</div>
+          <h3>Brochures</h3>
+          <p>Explore our detailed brochures to discover the full range of Mahindra Truck and Bus models, features, and services.</p>
+          <a href="#">Know more →</a>
+        </div>
+      </label>
+
+    </div>
+  </section>
+  <section>
+    <div class="img1">
+        <img src="img6.2.png" alt="">
+    </div>
+  </section>
+  <section>
+    <div class="img1">
+        <img src="img6.3.png" alt="">
+    </div>
+  </section>
+  </section>
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>HCV</h3>
+      <ul>
+        <li>Haulage Vehicle</li>
+        <li>Tipper</li>
+        <li>Tractor Trailer</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>LCV</h3>
+      <ul>
+        <li>Furio 8</li>
+        <li>Jayo</li>
+        <li>Loadking Optimo</li>
+        <li>Furio 7</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>SERVICES</h3>
+      <ul>
+        <li>Mobile Vans</li>
+        <li>Now Service 24x7</li>
+        <li>MPart Plaza</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>CONTACT US</h3>
+      <ul>
+        <li>Dealer Locator</li>
+        <li>Authorized Service Centre</li>
+        <li>Get in touch</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>IMPORTANT LINKS</h3>
+      <ul>
+        <li>Testimonial</li>
+        <li>Career</li>
+        <li>MTRUST</li>
+        <li>Media</li>
+        <li>Events</li>
+        <li>Mahindra Corporate</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>QUICK LINKS</h3>
+      <ul>
+        <li>About Mahindra Group</li>
+        <li>About MTB</li>
+        <li>Awards & Honors</li>
+        <li>Our Initiatives</li>
+        <li>E-Brochure</li>
+        <li>Blogs</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      Privacy Policy | Disclaimer | SiteMap |
+      <strong>Copyright © 2025 THOTAMADUGULA GOWTHAM REDDY. All Rights Reserved.</strong>
+    </p>
+    <div class="social-icons">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
